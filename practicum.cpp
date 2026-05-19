@@ -76,5 +76,14 @@ public:
         }
     }
 };
-
-int main(){}
+int main(){    RekeningBank* rekening1 =
+        new RekeningSyariah("Ahmad", 5000000);
+
+    RekeningBank* rekening2 =
+        new RekeningKonvensional("Budi", 7000000);
+
+    RekeningBank* rekening3 =
+        new RekeningPremium("Siti", 9000000);
+
+    RekeningBank* rekening4 =
+        new RekeningPremium("Rina", 15000000);}
