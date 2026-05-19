@@ -20,4 +20,10 @@ protected:
 
         namaNasabah[i] = '\0';
         saldo = saldoAwal;
-    }int main(){}
+    }    virtual void potongAdmin() = 0;
+
+    void tampilkanSaldo()
+    {
+        cout << "Customer Name : " << namaNasabah << endl;
+        cout << "Current Balance : Rp " << saldo << endl;
+    }int main(){}
