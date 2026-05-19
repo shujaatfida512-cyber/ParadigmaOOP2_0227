@@ -55,5 +55,26 @@ public:
         cout << "\nConventional Account -> Admin fee Rp 15,000 deducted." << endl;
     }
 };
+class RekeningPremium : public RekeningBank
+{
+public:
+    RekeningPremium(const char nama[], double saldoAwal)
+        : RekeningBank(nama, saldoAwal) {
+    }
+
+    void potongAdmin() override
+    {
+        if (saldo > 10000000)
+        {
+            cout << "\nPremium Account -> No admin fee charged." << endl;
+        }
+        else
+        {
+            saldo -= 50000;
+
+            cout << "\nPremium Account -> Admin fee Rp 50,000 deducted." << endl;
+        }
+    }
+};
 
 int main(){}
