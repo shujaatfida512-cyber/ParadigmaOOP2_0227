@@ -86,4 +86,15 @@ public:
         new RekeningPremium("Siti", 9000000);
 
     RekeningBank* rekening4 =
-        new RekeningPremium("Rina", 15000000);}
+        new RekeningPremium("Rina", 15000000);    rekening1->potongAdmin();
+    rekening1->tampilkanSaldo();
+
+    rekening2->potongAdmin();
+    rekening2->tampilkanSaldo();
+
+    rekening3->potongAdmin();
+    rekening3->tampilkanSaldo();
+
+    rekening4->potongAdmin();
+    rekening4->tampilkanSaldo();
+}
