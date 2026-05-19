@@ -26,4 +26,6 @@ protected:
     {
         cout << "Customer Name : " << namaNasabah << endl;
         cout << "Current Balance : Rp " << saldo << endl;
-    }int main(){}
+    }    virtual ~RekeningBank() {}
+};
+int main(){}
