@@ -28,4 +28,16 @@ protected:
         cout << "Current Balance : Rp " << saldo << endl;
     }    virtual ~RekeningBank() {}
 };
+class RekeningSyariah : public RekeningBank
+{
+public:
+    RekeningSyariah(const char nama[], double saldoAwal)
+        : RekeningBank(nama, saldoAwal) {
+    }
+
+    void potongAdmin() override
+    {
+        cout << "\nSyariah Account -> No admin fee charged." << endl;
+    }
+};
 int main(){}
