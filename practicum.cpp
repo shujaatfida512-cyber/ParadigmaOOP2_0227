@@ -40,4 +40,20 @@ public:
         cout << "\nSyariah Account -> No admin fee charged." << endl;
     }
 };
+
+class RekeningKonvensional : public RekeningBank
+{
+public:
+    RekeningKonvensional(const char nama[], double saldoAwal)
+        : RekeningBank(nama, saldoAwal) {
+    }
+
+    void potongAdmin() override
+    {
+        saldo -= 15000;
+
+        cout << "\nConventional Account -> Admin fee Rp 15,000 deducted." << endl;
+    }
+};
+
 int main(){}
